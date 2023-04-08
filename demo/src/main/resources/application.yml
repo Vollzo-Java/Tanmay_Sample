@@ -1,0 +1,32 @@
+server:
+  port: 8088
+
+
+#############################
+#  Database                 #
+#############################
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@hostname:1521:xe
+    username: system
+    password: system1
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.Oracle10gDialect
+ 
+
+
+
+
+#############################
+# REDIS                     #
+#############################
+#spring:
+  #redis:
+    #host: localhost
+    #port: 6379
+    #password: password
+  
